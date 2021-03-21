@@ -1,0 +1,1187 @@
+.footer {
+width: 100%;/*ширина*/
+height: 70px;/*высота*/
+background: rgba(15, 15, 15, 0.377);
+}
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+.navigat {
+width: 1900px;/*ширина*/
+height: 950px;/*высота*/
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+/*верхняя панель*/
+.hedear {
+width: 100%;/*ширина*/
+height: 90px;/*высота*/
+background: black;
+}
+/*первый уровнень верхней панели*/
+.hedear__lvl1 {
+width: 100%;/*ширина*/
+height: 50%;/*высота*/  
+position: relative;
+background: rgb(110, 101, 101);
+display: flex;
+
+}
+/*левая часть первый уровнень верхней панели*/
+.left__lvl1 {
+width: 20%;/*ширина*/
+height: 100%;/*высота*/  
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*меню рейтинг*/
+.rating__lvl1 {
+background: rgba(0, 247, 255, 0.452);
+}
+/*меню входящие*/
+.incoming__lvl1 {
+background: rgba(94, 255, 0, 0.452);
+}
+/*меню достижения*/
+.achievements__lvl1 {
+width: 200px;/*ширина*/
+height: 100%;/*высота*/ 
+background: rgba(38, 0, 255, 0.452);
+text-align: center;/*центрует текст*/
+}
+/*меню заслуги*/
+.merit__lvl1 {
+background: rgba(255, 0, 76, 0.452);
+}
+
+/*центральная часть первый уровнень верхней панели*/
+.centre_lvl1 {
+position: relative;
+top: 0;
+left: 185px;
+width: 200px;/*ширина*/
+height: 100%;/*высота*/ 
+margin: 0 auto; 
+display:flex;
+flex-direction:column;
+align-items: center;
+padding: 4px;
+}
+
+/*Имя игрока*/
+.name__lvl1{
+color:  rgb(255, 93, 34);
+position: relative;
+width: 100%;/*ширина*/
+height: 50%;/*высота*/ 
+text-align: center;
+}
+/*координаты игрока*/
+.coordinates__lvl1{
+color: white;
+position: relative;
+width: 100%;/*ширина*/
+height: 50%;/*высота*/
+text-align: center;
+}
+
+/*правая часть первый уровнень верхней панели*/
+.right__lvl1 {
+position: relative;
+top: 0px;
+right: 0px;
+width: 20%;/*ширина*/
+height: 100%;/*высота*/ 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*меню полноэкранны режим*/  
+.all__screen__lvl1 {
+background: rgba(226, 251, 0, 0.2);
+}
+
+/*меню новости*/  
+.news__lvl1 {
+background: rgba(17, 0, 255, 0.2);
+}
+/*меню справочной службы*/  
+.reference__lvl1 {
+background: rgba(255, 74, 2, 0.2);
+}
+
+/*общие параметры всех меню панели второго уровня*/
+.menu2{
+width: 25%;/*ширина*/
+height: 100%;/*высота*/
+color: white;
+background: rgb(109, 98, 98);
+border:2px solid rgba(1, 0, 0, 0.7) ;
+box-shadow: 0 0 5px rgba(0,0,0,0.6); /* Параметры тени */
+}
+
+
+
+
+
+
+
+/*скрыть всю панель*/
+.close__lvl2 {
+position:absolute ;
+background: red ;
+bottom: -20px;
+left: 49%;
+width: 25px;/*ширина*/
+height: 25px;/*высота*/
+}
+
+
+
+
+
+
+/*форма меню опций*/
+.lvl1__option{
+color: white;
+background: rgb(109, 98, 98);
+text-align: center;
+border:2px solid rgba(1, 0, 0, 0.7) ;
+width: 100%;/*ширина*/
+height: 100%;/*высота*/ 
+box-shadow: 0 0 5px rgba(0,0,0,0.6); /* Параметры тени */
+}
+
+
+.lvl2{
+display:flex;
+flex-direction:column;
+margin: 2px;
+position: relative;
+}
+
+/*общие параметры всех меню верхней панели первого уровня*/
+.menu{
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+color: rgb(10, 9, 9);
+background: rgb(109, 98, 98);
+border:2px solid rgba(1, 0, 0, 0.7) ;
+box-shadow: 0 0 5px rgba(0,0,0,0.6); /* Параметры тени */
+width: 80px;/*ширина*/
+height: 30px;/*высота*/ 
+color: white;
+}
+
+
+
+
+#all__okna{
+position: relative;
+width: 800px;/*ширина*/
+height: 600px;/*высота*/ 
+text-align: center;
+padding: 10px;
+border: 3px solid rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+color: #ffffff;
+position: absolute; /*центрует окно */
+top: 0;/*центрует окно */
+right: 0;/*центрует окно */
+bottom: 0;/*центрует окно */
+left: 0;/*центрует окно */
+margin: auto;/*центрует окно */
+background: rgb(51, 51, 48);
+z-index: 2;
+}
+
+
+
+
+
+
+
+
+.meny a{
+text-decoration:none ;
+}
+.meny li{
+position: relative;
+list-style: none;
+}
+
+.meny li:hover {
+display: block;
+}
+.meny__list>li {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.meny__link {
+color: #fff;
+}
+.sub-meny__link {
+display: none;
+position: absolute;
+left: 0;
+top: 20px;
+background-color: black;
+}
+
+[data-toolmedal] {
+position: relative;
+/* Относительное позиционирование */
+}
+[data-toolmedal]::after {
+  content: attr(data-toolmedal);/* Выводим текст */
+            
+border-radius: 15px;
+color: white;
+position: absolute;
+/* Абсолютное позиционирование */
+width: 145px;    /* Ширина подсказки */
+height: 100%;/*высота подсказки */
+top: -90px;
+left: 3px;
+/* Положение подсказки */
+background: #5519ced7;
+/* Синий цвет фона */
+color: #fff;
+/* Цвет текста */
+padding: 0.5em;
+/* Поля вокруг текста */
+box-shadow: 2px 2px 5px rgba(49, 47, 47, 0.3);
+/* Параметры тени */
+pointer-events: none;
+/* Подсказка */
+opacity: 0;
+/* Подсказка невидима */
+transition: 0.3s;
+/* Время появления подсказки */
+}
+
+[data-toolmedal]:hover::after {
+opacity: 1;
+}
+
+
+
+
+
+
+
+ /*затемненеи фона вовремя октытия окна*/
+ #achievements__zatemnenie {
+background: rgba(102, 102, 102, 0.5);
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+
+.all__okna{
+width: 800px;/*ширина*/
+height: 600px;/*высота*/ 
+}
+ /*оформление окна*/
+#achievements__okno {
+position: relative;
+width: 800px;/*ширина*/
+height: 600px;/*высота*/ 
+text-align: center;
+padding: 10px;
+border: 3px solid rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+color: #0632f8;
+position: absolute; /*центрует окно */
+top: 0;/*центрует окно */
+right: 0;/*центрует окно */
+bottom: 0;/*центрует окно */
+left: 0;/*центрует окно */
+margin: auto;/*центрует окно */
+background: rgb(190, 170, 55);
+z-index: 2;
+}
+
+    /*показывает окно*/
+#achievements__zatemnenie:target {display: block;}
+
+
+ /*кнопка закрытия окна*/
+.achievements__button{
+width: 40px;/*ширина*/
+height: 40px;/*высота*/ 
+border-radius: 50%;
+background: rgba(255, 208, 0, 0.774);
+font-size: 30px;
+}
+
+
+
+
+
+a{
+color: white;
+font-size: 18px;
+}
+/*название окна Достижения*/
+.achievements__name {
+text-align: center;
+background: rgb(192, 136, 39);
+border: 2px solid rgb(235, 119, 11) ;
+color: white;
+padding: 10px;
+width: 400px;/*ширина*/
+height: 60px;/*высота*/ 
+margin: 0 auto;
+font-size: 30px;
+border-radius: 10px;
+position: absolute;
+top: -25px;
+left: 25%;
+}
+
+
+/*навигация в окне */
+.achievements__nav {
+width: 98%;/*ширина*/
+height: 98%;/*высота*/
+padding: 3px;
+margin: 3px;
+display: flex;
+flex-direction:column;
+}
+/*вариации достижений*/
+.achievements__var {
+position: relative;
+top: 2px;
+left: 2%;
+width: 96%;/*ширина*/
+height: 8%;/*высота*/
+display: flex;
+}
+/*достижения уровня 1*/
+.nane__lvl1 {
+top: 2px;
+}
+/*достижения уровня 2*/
+.name__lvl2 {
+top: 5px;
+}
+/*достижения уровня 3*/
+.name__lvl3 {
+top: 9px;
+}
+/*достижения уровня 4*/
+.name__lvl4 {
+top:17px;
+}
+
+.builder{
+background: gold;
+width: 70px;/*ширина*/
+height: 44px;/*высота*/
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+}
+
+.description{
+width: 50%;/*ширина*/
+height: 40px;/*высота*/
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+}
+
+/*общие параметры вариации достижений*/
+.lvl {
+border:2px solid black;
+border-radius: 6px;
+width: 20%;/*ширина*/
+height: 60%;/*высота*/
+margin: 5px;
+padding: 8px;
+color: black;
+text-align: center;
+}
+
+
+/*общие параметры падписи раздела*/
+.lol2 {
+margin: 5px;
+width: 99%;
+height: 40%;/*высота*/
+display: flex;
+justify-content:space-around;
+background: rgba(53, 59, 59, 0.4);
+}
+
+/*общие параметры значков раздела*/
+.lol3 {
+text-align: center;
+height: 80%;/*высота*/
+display: flex;
+}
+
+img{
+width: 94%;/*ширина*/
+height: 56%;/*высота*/
+margin: 6px;
+}
+/*общие параметры раздела*/
+.lol {
+position: relative;
+display: flex;
+flex-direction:column ;
+border-radius: 9px;
+width: 96%;/*ширина*/
+height: 19%;/*высота*/
+left: 2%;
+border: 2px solid rgba(0, 0, 0, 1);
+background: slategray;
+}
+
+.medals1{
+background: aqua;
+width: 200px;/*ширина*/
+height: 82px;/*высота*/
+margin: 1px;
+color: blue;
+}
+
+#prize__zatemnenie {
+background: rgba(102, 102, 102, 0.5);
+width: 100%;/*ширина*/
+height: 100%;/*высота*/
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+}
+
+
+#prize__okno {
+width: 300px;
+height: 50px;
+text-align: center;
+padding: 15px;
+border: 3px solid #0000cc;
+border-radius: 10px;
+color: #0000cc;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
+background: #fff;
+}
+
+#prize__zatemnenie:target {display: block;}
+.prize__close {
+display: inline-block;
+border: 1px solid #0000cc;
+color: #0000cc;
+padding: 0 12px;
+margin: 10px;
+text-decoration: none;
+background: #f2f2f2;
+font-size: 14pt;
+cursor:pointer;
+}
+.prize__close:hover {background: #e6e6ff;}
+
+
+.prize__hed{
+display: flex;
+}
+
+
+
+
+.achievements__hint{
+margin: 4px;
+border-radius: 5px;
+background: rgb(59, 59, 216);
+color: white;
+width: 60px;/*ширина*/
+height: 30px;/*высота*/
+border:2px solid rgb(103, 103, 224);
+font-size: 20px;
+}
+
+
+
+       [data-toollol] {
+            position: relative;
+            /* Относительное позиционирование */
+        }
+
+        [data-toollol]::after {
+            content: attr(data-toollol);
+            /* Выводим текст */
+            position: absolute;
+            /* Абсолютное позиционирование */
+            width: 300px;
+            /* Ширина подсказки */
+           top: 0px;
+           right: 70px;
+            /* Положение подсказки */
+            background: #4e37d1d7;
+            /* Синий цвет фона */
+            color: #fff;
+            /* Цвет текста */
+            padding: 0.5em;
+            /* Поля вокруг текста */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Параметры тени */
+            pointer-events: none;
+            /* Подсказка */
+            opacity: 0;
+            /* Подсказка невидима */
+            transition: 0.3s;
+            /* Время появления подсказки */
+        }
+
+        [data-toollol]:hover::after {
+            opacity: 1;
+        }
+
+* Checkbox Hack */
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+label { 
+  -webkit-appearance: push-button;
+  -moz-appearance: button; 
+  display: inline-block;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+}
+
+/* Состояние по умолчанию */
+.facebook {
+position: absolute;
+top: 0;
+left: 30%;
+width: 40%;/*ширина*/
+height: 100%;/*высота*/
+line-height: 100px;
+color: white;
+text-align: center;
+display: flex;
+}
+
+/* Переключенное состояние */
+input[type=checkbox]:checked ~ .facebook {
+   display: none;
+}
+
+.buttom{
+position: absolute;
+top: 67px;
+left: 49.6%;
+background: black;
+width: 20px;/*ширина*/
+height: 20px;/*высота*/
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+
+.hint {
+width: 80px;/*ширина*/
+height: 80px;/*высота*/
+}
+
+.hint:hover::after {
+/* Выводим текст */
+content: attr(data-title);
+/* Полупрозрачный цвет фона */
+background: rgba(255, 255, 230, 0.9);
+font-family: Arial, sans-serif;
+/* Гарнитура шрифта */
+font-size: 11px;
+/* Размер текста подсказки */
+width: 80px;/*ширина*/
+height: 80px;/*высота*/
+/* Поля */
+border: 1px solid #333;
+/* Параметры рамки */
+
+}
+
+
+.hint__button {
+color: beige;
+display: flex;
+justify-content: center;
+text-align: center;
+width: 50px;/*ширина*/
+height: 50px;/*высота*/
+font-size: 50px;
+border-radius: 50%;
+background: darkblue;
+}
+
+
+
+       [data-tooltip] {
+            position: relative;
+            /* Относительное позиционирование */
+        }
+
+        [data-tooltip]::after {
+            content: attr(data-tooltip);
+            border-radius: 7px;
+            /* Выводим текст */
+            position: absolute;
+            /* Абсолютное позиционирование */
+            width: 300px;
+            /* Ширина подсказки */
+            left:50px;
+           top: 40px;
+            /* Положение подсказки */
+            background: #d68b1bd7;
+            /* Синий цвет фона */
+            color: #fff;
+            /* Цвет текста */
+            padding: 0.5em;
+            /* Поля вокруг текста */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Параметры тени */
+            pointer-events: none;
+            /* Подсказка */
+            opacity: 0;
+            /* Подсказка невидима */
+            transition: 0.3s;
+            /* Время появления подсказки */
+        }
+
+        [data-tooltip]:hover::after {
+            opacity: 1;
+        }
+         #zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #okno {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+      }
+      #zatemnenie:target {display: block;}
+      .close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+      }
+      .close:hover {background: #e6e6ff;}
+
+.right {
+width: 50%;/*ширина*/
+height: 100%;/*высота*/
+
+}
+
+.portrait__left {
+margin: 10px;
+width: 300px;/*ширина*/
+height: 300px;/*высота*/
+display: flex;
+flex-direction: column;
+}
+
+.picture__left {
+width: 300px;/*ширина*/
+height:250px;/*высота*/
+background: brown;
+color: white;
+font-size: 20px;
+}
+
+.lvl__left {
+width: 300px;/*ширина*/
+height: 10%;/*высота*/
+display: flex;
+justify-content:space-around;
+}
+
+.exp__left {
+width: 80%;/*ширина*/
+height: 100%;/*высота*/
+background: gold;
+color: rgb(25, 23, 34);
+font-size: 30px;
+text-align: center;
+}
+.img__left {
+width: 100px;/*ширина*/
+height: 90px;/*высота*/
+position: relative;
+left: -1px;
+top: -36px;
+}
+
+
+.button__left{
+background: none;
+}
+
+ #picture__zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+    
+      #picture__zatemnenie:target {display: block;}
+      .picture__close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+      }
+      .picture__close:hover {background: #e6e6ff;}
+
+.act__okno{
+display: flex;
+justify-content:space-between;
+width: 98%;/*ширина*/
+height: 10%;/*высота*/
+}
+
+.player__case {
+width: 40%;/*ширина*/
+height: 90%;/*высота*/
+color: white;
+font-size: 30px;
+text-align: center ;
+padding: 10px;
+}
+
+#picture__okno{
+  display: flex;
+  flex-direction: column;
+}
+
+.intelligence {
+
+width: 100%;/*ширина*/
+height: 86%;/*высота*/
+}
+
+
+.intelligence div{
+color: white;
+
+}
+.clos__intelligence1 {
+width: 60%;/*ширина*/
+height: 60px;/*высота*/
+margin: -10px;
+display: flex;
+justify-content:flex-end;
+padding: 6px;
+}
+
+
+.clos_raz{
+background: rgb(100, 15, 15);
+width: 57px;/*ширина*/
+height: 57px;/*высота*/
+border-radius: 50%;
+margin: 5px;
+color: thistle;
+}
+
+
+
+
+.hed__intelligence {
+background: rgb(31, 31, 26);
+width: 100%;/*ширина*/
+height: 15%;/*высота*/
+color: white;
+font-size: 30px;
+text-align: center ;
+padding: 10px;
+display: flex;
+justify-content:space-between;
+}
+
+.footer__intelligence {
+
+width: 100%;/*ширина*/
+height:86%;/*высота*/
+color: white;
+font-size: 30px;
+text-align: center ;
+padding: 10px;
+display: flex;
+justify-content:space-between;
+}
+
+.left__intelligence {
+background: rgb(97, 28, 28);
+width: 50%;/*ширина*/
+height:100%;/*высота*/
+border-radius: 6px;
+color: rgb(97, 28, 28);
+font-size: 30px;
+text-align: center ;
+margin: 7px;
+display: flex;
+flex-direction:column;
+}
+.left__all{
+width: 96%;/*ширина*/
+height:31%;/*высота*/
+background: rgb(9, 74, 158);
+margin: 6px;
+}
+
+.right__intelligence {
+background: rgb(97, 28, 28);
+width: 50%;/*ширина*/
+height:100%;/*высота*/
+border-radius: 7px;
+color: white;
+font-size: 30px;
+text-align: center ;
+display: flex;
+flex-direction: column;
+margin: 7px;
+}
+
+
+.right__all{
+width: 96%;/*ширина*/
+height:47%;/*высота*/
+background: rgb(9, 74, 158);
+margin: 6px; 
+}
+
+
+.but1{
+width: 80px;/*ширина*/
+height:80px;/*высота*/
+position: relative;
+top: 36px;;
+left: -20px;
+}
+
+.but2{
+width: 80px;/*ширина*/
+height:80px;/*высота*/
+position: relative;
+top: 36px;;
+right: -20px ;
+}
+.but3{
+width: 300px;/*ширина*/
+height:20px;/*высота*/
+position: relative;
+top: -80px;;
+left: 0px;
+}
+
+[data-toolexp] {
+position: relative;
+/* Относительное позиционирование */
+}
+
+[data-toolexp]::after {
+content: attr(data-toolexp);/* Выводим текст */
+width: 120px;
+position: absolute;/* Абсолютное позиционирование */
+left:90px;/* Положение подсказки сверху*/
+top: 5px;/* Положение подсказки слева*/
+background: #3b2f1cd7;/*цвет фона */
+border-radius: 10px;
+color: #fff;/* Цвет текста */
+padding: 0.5em;/* Поля вокруг текста */
+box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);/* Параметры тени */
+pointer-events: none;/*Подсказка */
+opacity: 0;/* Подсказка невидима */
+transition: 0.6s;/* Время появления подсказки */
+}
+[data-toolexp]:hover::after {
+opacity: 1;
+}
+
+[data-toolgold] {
+position: relative;
+/* Относительное позиционирование */
+}
+
+[data-toolgold]::after {
+content: attr(data-toolgold);/* Выводим текст */
+border-radius: 7px;
+position: absolute;/* Абсолютное позиционирование */
+width: 150px;/* Ширина подсказки */
+left:75px;/* Положение подсказки слева */
+top: 10px;/* Положение подсказки сверху*/
+background: #3b2f1cd7;/* Синий цвет фона */
+color: #fff;/* Цвет текста */
+padding: 0.5em;/* Поля вокруг текста */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);/* Параметры тени */
+pointer-events: none;/* Подсказка */
+opacity: 0;/* Подсказка невидима */
+transition: 0.3s;/* Время появления подсказки */
+}
+
+[data-toolgold]:hover::after {
+opacity: 1;
+}
+
+[data-toolgold] {
+position: relative;
+/* Относительное позиционирование */
+}
+
+[data-toolgold]::after {
+content: attr(data-toolgold);/* Выводим текст */
+border-radius: 7px;
+position: absolute;/* Абсолютное позиционирование */
+width: 150px;/* Ширина подсказки */
+left:75px;/* Положение подсказки слева */
+top: 10px;/* Положение подсказки сверху*/
+background: #3b2f1cd7;/* Синий цвет фона */
+color: #fff;/* Цвет текста */
+padding: 0.5em;/* Поля вокруг текста */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);/* Параметры тени */
+pointer-events: none;/* Подсказка */
+opacity: 0;/* Подсказка невидима */
+transition: 0.3s;/* Время появления подсказки */
+}
+
+[data-toolgold]:hover::after {
+opacity: 1;
+}
+
+[data-toolarmy] {
+position: relative;/* Относительное позиционирование */
+}
+
+[data-toolarmy]::after {
+content: attr(data-toolarmy);
+border-radius: 7px;/* Выводим текст */
+position: absolute;/* Абсолютное позиционирование */
+width: 150px;/* Ширина подсказки */
+left:75px;
+top:10px;/* Положение подсказки */
+background: #3b2f1cd7;/* Синий цвет фона */
+color: #fff;/* Цвет текста */
+padding: 0.5em;/* Поля вокруг текста */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);/* Параметры тени */
+pointer-events: none;/* Подсказка */
+opacity: 0;/* Подсказка невидима */
+transition: 0.3s;/* Время появления подсказки */
+}
+
+[data-toolarmy]:hover::after {
+opacity: 1;
+}
+
+
+.centr{
+width: 100%;/*ширина*/
+height: 700px;/*высота*/
+display: flex;
+flex: 1 1 auto;
+}
+
+
+.left {
+width: 50%;/*ширина*/
+height: 100%;/*высота*/
+display: flex;
+flex-direction: column;
+}
+.panel__left {
+position: relative;
+top: 20px;
+margin: 10px;
+width: 300px;/*ширина*/
+height: 100px;/*высота*/
+display: flex;
+flex-direction: column;
+}
+.events__left {
+margin: 10px;
+width:  100px;/*ширина*/
+height: 100px;/*высота*/
+border-radius: 50%;
+background: rgb(42, 6, 245);
+color: white;
+padding: 40px;
+text-align: center;
+}
+
+
+.army__left {
+width:  100%;/*ширина*/
+height: 50%;/*высота*/
+
+display: flex;
+}
+.gold__left {
+width:  100%;/*ширина*/
+height: 50%;/*высота*/
+display: flex;
+}
+
+
+.number__gold {
+width:  70%;/*ширина*/
+height: 100%;/*высота*/
+background: rgb(255, 0, 85);
+color: black;
+font-size: 30px;
+text-align: center;
+padding: 10px;
+}
+.img__gold {
+width:  70px;/*ширина*/
+height: 70px;/*высота*/
+position: relative;
+top: -6px;
+}
+
+.quantity__left {
+width:  70%;/*ширина*/
+height: 100%;/*высота*/
+background: orange;
+color: black;
+font-size: 30px;
+text-align: center;
+padding: 10px;
+}
+.army__img {
+width:  70px;/*ширина*/
+height: 70px;/*высота*/
+position: relative;
+top: -6px;
+
+}
+
+
+.meny a{
+text-decoration:none ;
+}
+.meny li{
+position: relative;
+list-style: none;
+}
+
+.meny li:hover {
+display: block;
+}
+.meny__list>li {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.meny__link {
+color: #fff;
+}
+.sub-meny__link {
+display: none;
+position: absolute;
+left: 0;
+top: 20px;
+background-color: black;
+}
+
+.meny {
+}
+.meny__list {
+}

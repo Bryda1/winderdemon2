@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stail.css">
+ 
+    <!--стили дял примера всплывающего окна-->
+    <style>
+        #zatemnenie {
+            background: rgba(102, 102, 102, 0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+
+        #okno {
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            padding: 15px;
+            border: 3px solid #0000cc;
+            border-radius: 10px;
+            color: #0000cc;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background: #fff;
+        }
+
+        #zatemnenie:target {
+            display: block;
+        }
+
+        .close {
+            display: inline-block;
+            border: 1px solid #0000cc;
+            color: #0000cc;
+            padding: 0 12px;
+            margin: 10px;
+            text-decoration: none;
+            background: #f2f2f2;
+            font-size: 14pt;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            background: #e6e6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigat">
+        <!--верхняя панель-->
+        <div class="hedear">
+            <!--первый уровнень верхней панели-->
+            <div class="hedear__lvl1">
+
+                <!--левая часть первый уровнень верхней панели-->
+                <div class="left__lvl1">
+                    <!--меню достижения-->
+                    <a href="#achievements__zatemnenie">
+                        <div class="achievements__lvl1 menu">
+                            достижения
+                        </div>
+                    </a>
+
+
+
+                    <!--меню рейтинг-->
+                    <a href="#zatemnenie">
+                        <div class="rating__lvl1 menu">
+                            рейтиг
+                        </div>
+                    </a>
+
+                    <!--меню личное дело -->
+                    <a href="#zatemnenie">
+                        <div class="incoming__lvl1 menu">
+                            личное
+                        </div>
+                    </a>
+
+                    <!--меню входящие-->
+                    <a href="#zatemnenie">
+                        <div class="incoming__lvl1 menu">
+                            входящие
+                        </div>
+                    </a>
+                </div>
+
+                <!--центральная часть первый уровнень верхней панели-->
+                <div class="centre_lvl1">
+                    <!--Имя игрока-->
+                    <div class="name__lvl1">имя игрока</div>
+                    <!--координаты игрока-->
+                    <div class="coordinates__lvl1"> x = 100 ; y = 100</div>
+                </div>
+
+                <!--правая часть первый уровнень верхней панели-->
+                <div class="right__lvl1">
+                    <!--меню полноэкранны режим-->
+                    <div class="all__screen__lvl1 menu">весь экран</div>
+                    <!--меню настройки-->
+                    <nav class="meny menu">
+                        <ul class="meny__list">
+                            <li>
+                                <a href="" class="meny__link">первый</a>
+                                <ul class="sub-meny__list">
+                                    <li>
+                                        <a href="" class="sub-meny__link">вложенность</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="sub-meny__link">вложенность</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <!--меню новости-->
+                    <a href="#zatemnenie">
+                        <div class="news__lvl1 menu">
+                            новости
+                        </div>
+                    </a>
+                    <!--меню справочной службы-->
+                    <a href="#zatemnenie">
+                        <div class="reference__lvl1 menu">
+                            справка
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <!--второй уровнень верхней панели-->
+            <div class="lvl2">
+                <!--скрыть второй уровнень верхней панел-->
+                <label for="toggle-1">
+                    <div class="buttom">X</div>
+                </label>
+                <input type="checkbox" id="toggle-1">
+
+
+                <div class="facebook">
+                    <!--меню ежедневные награды-->
+                    <div class=".prize__lvl2 menu2">
+                        <!--ссылка-->
+                        <a href="#prize__zatemnenie">
+                            <div сlass="prize__prize">награда</div>
+                        </a>
+                        <div class="prize__hed">
+                            <div сlass="prize__img"></div>
+                            <div clss="prize__day"></div>
+                        </div>
+                    </div>
+                    <!--меню отчёт о битвах-->
+                    <div class="report__lvl2 menu2"><a href="#zatemnenie">отчёт о битвах</a></div>
+                    <!--меню дипломатия взаимодействие с кланом-->
+                    <div class="diplomacy__lvl2 menu2"><a href="#zatemnenie">дипломатия</a></div>
+                    <!--меню снаряжения-->
+                    <div class="artifacts__lvl2 menu2"><a href="#zatemnenie">снаряжения</a></div>
+                </div>
+            </div>
+            <!--всплывающие окна меню ежедневные награды-->
+            <div id="prize__zatemnenie">
+                <div id="all__okna" id="prize__okno">
+                    <!--кнопки взаимодейсвия закрыть открыть -->
+                    <div class="act__okno">
+                        <!--кнопка подсказки -->
+                        <p data-tooltip="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                            <button class="hint__button">?</button>
+                        </p>
+
+
+                        <!--кнопка закрыть-->
+                        <a href="#" class="achievements__close">
+                            <button class="achievements__button">x</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--ежедневные награды-->
+            <div id="zatemnenie">
+                <div id="all__okna" id="okno">
+                    <!--кнопки взаимодейсвия закрыть открыть -->
+                    <div class="act__okno">
+                        <!--кнопка подсказки -->
+                        <p data-tooltip="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                            <button class="hint__button">?</button>
+                        </p>
+                        <!--кнопка закрыть-->
+                        <a href="#" class="achievements__close">
+                            <button class="achievements__button">x</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--меню достижения-->
+            <div id="achievements__zatemnenie">
+                <!--содержимое окна достижения-->
+                <div id="achievements__okno">
+                    <!--кнопки взаимодейсвия закрыть и подсказкак -->
+                    <div class="act__okno">
+                        <!--кнопка подсказки -->
+                        <p data-tooltip="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                            <button class="hint__button">?</button>
+                        </p>
+                        <!--кнопка закрыть-->
+                        <a href="#" class="achievements__close">
+                            <button class="achievements__button">x</button>
+                        </a>
+                    </div>
+
+
+                    <!--название окна -->
+                    <div class="achievements__name">
+                        <h1>ДОСТИЖЕНИЯ</h1>
+                    </div>
+
+                    <!--навигация в окне достижение -->
+                    <div class="achievements__nav">
+                        <!--вариации достижений -->
+                        <div class="achievements__var">
+                            <!--название раздела достижений-->
+                            <d class="achievements__meny lvl">Строительные </d>
+                            <d class="achievements__meny1 lvl">Собирательные</d>
+                            <d class="achievements__meny2 lvl">Военные</d>
+                            <d class="achievements__meny3 lvl">Мирные</d>
+                            <d class="achievements__meny4 lvl">Ресурсные</d>
+                            <d class="achievements__meny4 lvl">Боевые</d>
+
+                        </div>
+                        <!--верхнии поля под награды-->
+                        <div class="nane__lvl1 lol">
+                            <!--достижения уровня 1 -->
+                            <div class="lvl1__hed lol2">
+                                <!--название награды-->
+                                <div class="builder">подпись</div>
+                                <!--подраздел наград -->
+                                <div class="description">описание за что даёться награда</div>
+                                <!--описание за что даёться награда -->
+                                <div>
+                                    <p
+                                        data-toollol="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                        <button class="achievements__hint">?</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--поле под нагрды -->
+                            <div class="lvl1__fot lol3">
+                                <!--медальёны за достижения -->
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                            </div>
+                        </div>
+                        <!--центральное поля под награды -->
+                        <div class="name__lvl2 lol">
+                            <div class="lvl2__hed lol2">
+                                <!--название награды-->
+                                <div class="builder">строитель</div>
+                                <!--подраздел наград -->
+                                <div class="description">описание за что даёться награда</div>
+                                <!--описание за что даёться награда -->
+                                <p data-toollol="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <button class="achievements__hint">?</button>
+                                </p>
+                            </div>
+                            <div class="lvl2__fot lol3">
+                                <!--медальёны за достижения -->
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                            </div>
+                        </div>
+                        <!--центральное второе поля под награды  -->
+                        <div class="name__lvl3 lol">
+                            <div class="lvl3__hed lol2">
+                                <!--название награды-->
+                                <div class="builder">строитель</div>
+                                <!--подраздел наград -->
+                                <div class="description">описание за что даёться награда</div>
+                                <!--описание за что даёться награда -->
+                                <p data-toollol="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <button class="achievements__hint">?</button>
+                                </p>
+                            </div>
+                            <!--рамка под медальёны-->
+                            <div class="lvl3__fot lol3">
+                                <!--медальёны за достижения -->
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                            </div>
+                        </div>
+                        <!--нижнее поля под награды-->
+                        <div class="name__lvl4 lol">
+                            <div class="lvl4__hed lol2">
+                                <!--название награды-->
+                                <div class="builder">строитель</div>
+                                <!--подраздел наград -->
+                                <div class="description">описание за что даёться награда</div>
+                                <!--описание за что даёться награда -->
+                                <p data-toollol="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <button class="achievements__hint">?</button>
+                                </p>
+                            </div>
+                            <div class="lvl4__fot lol3">
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                                <p data-toolmedal="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                                    <img src="img/img2.jpg" alt="нет картинки">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--центральная облость с левым и правм блоками-->
+        <div class="centr">
+            <!--левая панель-->
+            <div class="left">
+                <!--портрет панель-->
+                <div class="portrait__left">
+                    <!--картинка панель-->
+                    <a href="#picture__zatemnenie">
+                        <button class="picture__left">Картинка персонажа</button>
+                    </a>
+                    <!-- показатель уровня панель-->
+                    <div class="lvl__left">
+                        <!-- показатель опыта-->
+                        <div class="exp__left">555555</div>
+                        <!-- картинка уровня-->
+                        <div class="img__left">
+                            <p data-toolexp='опыт и уровень '>
+                                <button class="exp__button button__left">
+                                    <img src="img/img2.jpg" alt="">
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--панель всех значений-->
+                <div class="panel__left">
+                    <!-- текущая армия-->
+                    <div class="army__left">
+                        <!--картинка армии -->
+                        <div class="army__img">
+                            <p data-toolarmy="количество войск">
+                                <button class="army__button button__left ">
+                                    <img src="img/img2.jpg" alt="">
+                                </button>
+                            </p>
+                        </div>
+                        <!--количество войск-->
+                        <div class="quantity__left">66666</div>
+                    </div>
+                    <!-- текущее золото-->
+                    <div class="gold__left">
+                        <!--картинка золота-->
+                        <div class="img__gold">
+                            <p data-toolgold="количество золота">
+                                <button class="img__button button__left">
+                                    <img src="img/img2.jpg" alt="">
+                                </button>
+                            </p>
+                        </div>
+                        <!--количество золота-->
+                        <div class="number__gold">7777</div>
+                    </div>
+
+                </div>
+                <!-- события-->
+                <div class="events__left">картинка</div>
+
+            </div>
+            <!--правая панель-->
+            <div class="right"></div>
+        </div>
+        <!--нижняя панель-->
+        <div class="footer"></div>
+    </div>
+
+
+    <!--картинка окно-->
+    <div id="picture__zatemnenie">
+        <div id="all__okna" id="picture__okno">
+            <!--кнопки взаимоедйствия-->
+                <div class="act__okno">
+                <!--кнопка подсказки -->
+                <p data-tooltip="Всплывающая подсказка сообщает о чём-то многозначном и полезном...">
+                    <button class="hint__button">?</button>
+
+                </p>
+                <!--название окна-->
+                <div class="player__case"> личное дело</div>
+                <!--кнопка закрыть-->
+                <a href="#" class="achievements__close">
+                    <button class="achievements__button">x</button>
+                </a>
+            </div>
+
+            <!--сведения об игроке -->
+            <div class="intelligence">
+                <!--название и икона перехода по разделам -->
+                <div class="hed__intelligence">
+                    <!--название -->
+                    <div class="titles__intelligence">названия разделов</div>
+                    <!--иконки разделов -->
+                    <div class="clos__intelligence1">
+                        <!--иконки раздела хранилище -->
+                        <button class="clos__storage clos_raz">1</button>
+                        <!--иконки раздела инвентарь -->
+                        <button class="clos__inventory clos_raz">2</button>
+                        <!--иконки раздела навыки -->
+                        <button class="clos__skills clos_raz">3</button>
+                        <!--иконки раздела  сведения об игроке -->
+                        <button class="info__player clos_raz">4</button>
+                    </div>
+                </div>
+                <!--низ окна-->
+                <div class="footer__intelligence">
+                    <!--левая часть окна-->
+                    <div class="left__intelligence">
+                        <!--изменение персонажа-->
+                        <div class="change__intelligence left__all">
+                            <!--изменение потретеа-->
+                            <button class="but1">изменение персонажа</button>
+                            <!--изменение знамени-->
+                            <button class="but2">изменение знамени</button>
+                            <!--изменение имени-->
+                            <button class="but3">изменение имени</button>
+                        </div>
+                        <!--внешний вид городов-->
+                        <div class="view__intelligence left__all">внешний вид городов</div>
+                        <!--статистика сезона-->
+                        <div class="statistics__intelligence left__all">статистика сезона</div>
+                    </div>
+                    <!--правая часть окна-->
+                    <div class="right__intelligence">
+
+                        <div class="info__intelligence right__all">информаци о королевстве</div>
+                        <div class="parameters__intelligence right__all">параметры</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
